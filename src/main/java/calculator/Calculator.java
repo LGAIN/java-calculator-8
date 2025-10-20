@@ -18,7 +18,7 @@ public class Calculator {
             validNumber(num);
             return num;
         } catch (NumberFormatException e) {
-            throw new NumberFormatException("구분자 이외의 입력값은 숫자여야 합니다.");
+            throw new IllegalArgumentException("구분자 이외의 입력값은 숫자여야 합니다.");
         }
     }
 
