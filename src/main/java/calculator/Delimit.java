@@ -5,7 +5,7 @@ public record Delimit(
 ) {
     private static final String DEFAULT_DELIMITER = ",|:";
     private static final String CUSTOM_DELIMITER_START = "//";
-    private static final String CUSTOM_DELIMITER_END = "\n";
+    private static final String CUSTOM_DELIMITER_END = "\\n";
 
     public Delimit(String delimiter) {
         this.delimiter = addDelimiter(delimiter);
